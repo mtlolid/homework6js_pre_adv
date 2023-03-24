@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css">
+
+</head>
+
+<body>
+
+    <div class="signUp">
+        <form name="signUpForm">
+            <h1>Please sign up</h1>
+            <div class="inputWrap">
+                <input type="text" name="firstName" placeholder="First name">
+            </div>
+            <div class="inputWrap">
+                <input type="text" name="lastName" placeholder="Last name">
+            </div>
+            <div class="inputWrap">
+                <input type="text" name="emailAddress" placeholder="Email address">
+                <div class="alreadyExist">This email already exist</div>
+            </div>
+            <div class="inputWrap">
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <input type="button" name="signUpButton" value="Sign Up" class="signUpBtn">
+            <p class="signInNow">Sign in now</p>
+        </form>
+    </div>
+
+    <div class="signIn hiden">
+        <form name="signInForm">
+            <h1>Please sign in</h1>
+            <div class="inputWrap">
+                <input type="text" name="emailAddress" placeholder="Email address">
+            </div>
+            <div class="inputWrap">
+                <input type="password" name="password" placeholder="Password">
+                <div class="emptyStorage">local storage is empty</div>
+                <div class="invalidPassword">incorect email or password</div>
+            </div>
+
+            <input type="button" name="signInButton" value="Sign In" class="signInBtn">
+            <p class="signUpNow">Sign Up now</p>
+        </form>
+    </div>
+
+    <div class="profile hiden">
+        <div class="profile__pic"></div>
+        <p class="profile__name">Name Surname</p>
+        <p class="profile__email">email@email.com</p>
+        <p>Designer & Web Developing</p>
+        <input type="button" value="Sign up" class="profile__button">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

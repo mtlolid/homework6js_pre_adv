@@ -1,0 +1,172 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(232, 232, 232);
+}
+
+.signUp,
+.signIn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+.signUp form[name=signUpForm],
+.signUp form[name=signInForm],
+.signIn form[name=signUpForm],
+.signIn form[name=signInForm] {
+  width: 30%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.signUp form[name=signUpForm] h1,
+.signUp form[name=signInForm] h1,
+.signIn form[name=signUpForm] h1,
+.signIn form[name=signInForm] h1 {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.signUp form[name=signUpForm] input,
+.signUp form[name=signInForm] input,
+.signIn form[name=signUpForm] input,
+.signIn form[name=signInForm] input {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.signUp form[name=signUpForm] input[type=button],
+.signUp form[name=signInForm] input[type=button],
+.signIn form[name=signUpForm] input[type=button],
+.signIn form[name=signInForm] input[type=button] {
+  width: 100%;
+  height: 10%;
+  color: white;
+  background-color: slateblue;
+}
+.signUp form[name=signUpForm] p,
+.signUp form[name=signInForm] p,
+.signIn form[name=signUpForm] p,
+.signIn form[name=signInForm] p {
+  align-self: flex-start;
+  margin-top: -15px;
+  color: slateblue;
+  font-size: 0.7rem;
+}
+.signUp form[name=signUpForm] p:hover,
+.signUp form[name=signInForm] p:hover,
+.signIn form[name=signUpForm] p:hover,
+.signIn form[name=signInForm] p:hover {
+  text-decoration: underline;
+}
+
+.signInBtn {
+  background-color: green !important;
+}
+
+.hiden {
+  display: none !important;
+}
+
+.profile {
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  background-color: white;
+  color: lightslategray;
+}
+.profile__pic {
+  width: 100px;
+  height: 100px;
+  background-image: url("https://www.shareicon.net/data/512x512/2016/09/15/829466_man_512x512.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.profile__button {
+  width: 100%;
+  height: 10%;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.inputWrap {
+  width: 100%;
+  height: 10%;
+  position: relative;
+}
+.inputWrap::after {
+  display: none;
+  content: "";
+  position: absolute;
+  font-size: 15px;
+  top: 25%;
+  right: 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+.afterGood::after {
+  content: "✓";
+  color: green;
+  display: block;
+}
+
+.afterBad::after {
+  content: "❌";
+  color: indianred;
+  display: block;
+  font-size: 12px;
+}
+
+.alreadyExist {
+  display: none;
+  background-color: red;
+  position: absolute;
+  bottom: -50%;
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+}
+
+.emptyStorage, .invalidPassword {
+  display: none;
+  background-color: red;
+  position: absolute;
+  bottom: -50%;
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+}/*# sourceMappingURL=main.css.map */
